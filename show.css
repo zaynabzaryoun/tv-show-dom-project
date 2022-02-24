@@ -55,17 +55,16 @@ figure {
 }
 figcaption{
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     left: 30px;
     font-family: monospace;
     font-size: xx-small;
     color: white;
     background-color:rgb(24, 23, 23);
-    
-}
-figcaption{
     opacity: 0;
     transition:opacity 1000ms;
+
+    
 }
 figure:hover figcaption{
     opacity: 1;
@@ -74,20 +73,16 @@ figure:hover figcaption{
     color:rgb(27, 147, 151);
     text-decoration: none;
 }
-figcaption:hover {
-    display:block;  
-}
 .play-icon-container{
     display: inline;
 
 }
 .time-icon-container{
     text-align: center;
-    width:60px;
+    width: 60px;
     white-space: nowrap;
-    margin-left: 78px;
+    margin-left: 79px;
     margin-top: 4px;
-
 }
 .fa-angle-right{
     margin-right: 30px;
@@ -112,14 +107,14 @@ figcaption:hover {
     color: rgb(212, 18, 44);
 }
 .footer-icon{
-display: flex;
-flex-direction: column;
-position: fixed;
-margin-top: 20px;
-bottom: 0px;
-padding-bottom: 0px;
-margin-bottom: 0px;
-background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 20px;
+    bottom: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(0, 0, 0);
 }
 
 .footer-icon .fa{
@@ -138,12 +133,10 @@ background-color: rgb(0, 0, 0);
         display: flex;
     }
     .form{
-        display: block;
         left:0;
         margin-left: 3px;
     }
     #select{
-        display: block;
         margin: 3px;
     }
     .card-counter{
@@ -151,6 +144,17 @@ background-color: rgb(0, 0, 0);
     }
 
 }
+@media (max-width: 865px){
+    .form{
+        display: block;
+        
+    }
+    #select{
+        display: block;
+        
+    }
+}
+
 @media (max-width: 500px){
 
     .footer-icon .fa {
