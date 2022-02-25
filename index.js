@@ -1,4 +1,4 @@
-//TVShow
+window.alert('The data has originally come from tvmaze.com');
 let row = document.querySelector('.row');
 //createcard function creates all our cards by "for of" loop
 function createCard(show) {
